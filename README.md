@@ -20,6 +20,16 @@ Therefore, we can state that there is sufficient evidence to reject our null hyp
 Above are the summary statistics for the PSI in the MechaCar suspension coils. The first data frame is the total summary and the second data frame depicts the summary for a breakdown of each manufacturing lot.
 The design specificatins for the MechaCar suspension coils dictates that the variance of the coils must not exceed 100 PSI. From this analysis, we can see that in total, all the coils meet that specification. The variance for the all the coils is only 62.3. However, we can see from the lot breakdown, that Lot #1 and Lot #2 variance are well below the expectations but Lot#3 variance is way above the 100 PSI (170 PSI). This shows that is was very important to do an analysis grouping by Lots, because it shows that there is huge descrepency between the 3 lots and maybe the PSI variance will have to be looked at, especially in Lot 3.
 
+## T-Tests on Suspension Coils
+
+![](ttest.png)
+
+From the first t-test analysis, comparing the total PSI mean compared to sample mean of 1500, we can see we have a p-value of approx 0.06, which is higher than our significance value of 0.05. This means that the two values are not statistically significant.
+
+![](ttest-3.png)
+
+From our subset t-tests, we see that the only Manufacturing Lot that was statistically different was Lot3. It has a p-value of approximately 0.04 which is lower than the significance value of 0.05.
+
 ## Study Design: MechaCar vs Competition
 
 In my statistical study, I will test how the MechaCar performs against the competition. A very important factor in buying a new car is the highway fuel efficiency (especially with the recent raises in gas prices!).
